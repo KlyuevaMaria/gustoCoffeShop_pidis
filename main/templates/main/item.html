@@ -1,0 +1,29 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block link %}
+{#<link rel="stylesheet" type="text/css" href="{%  static 'css/basket.css'%}">#}
+{% endblock %}
+
+{% for item in items %}
+
+
+
+{% block title %}
+{{ item.name }}
+{% endblock %}
+
+{% block content %}
+<div class="card" style="width: 14.79vw;">
+                        <img src="{{ item.photo.url}}" alt="{{ item.title }}" class="card-img-top">
+                        <div class="card-body">
+                            <p>{{ item.name }}</p>
+                            <span class="card-text">{{ item.price }} руб.</span>
+                        </div>
+{#                        <div class="cardDesc">#}
+{#                            <span class="desc">{{ el.desc }}</span>#}
+{#                        </div>#}
+</div>
+
+{% endblock %}
+    {% endfor %}

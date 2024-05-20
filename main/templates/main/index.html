@@ -1,0 +1,31 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block link %}
+
+<link rel="stylesheet" type="text/css" href="{%  static 'css/style.css'%}">
+{% endblock %}
+
+
+{% block title %}
+    Gusto
+{% endblock %}
+
+{% block content %}
+    <main>
+            <div class="conteiner">
+                <img class="conteiner-img" src="{% static 'img/jonas-jacobsson-1iTKoFJvJ6E-unsplash.jpg' %}" alt="">
+                <div class="container-fluid">
+
+                    <div class="text">
+                        <p class="name">Gusto</p>
+                        <p class="hellotext">
+                            Мы рады приветствовать <br> Вас на сайте нашей кофейни!
+                        </p>
+                        <a href="{% url 'menu' %}">
+                            <button class="button">Меню</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+{% endblock %}

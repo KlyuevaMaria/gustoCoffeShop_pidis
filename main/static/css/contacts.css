@@ -1,0 +1,223 @@
+@font-face {
+    font-family: "MonteCarlo";
+    src: local("MonteCarlo"),
+        url("/static/fonts/MonteCarlo/MonteCarlo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+    url("/static/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+body {
+    background: #F3F2EF;
+}
+/* Форма обратной связи */
+.feedback {
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 4.5vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 15%;
+    text-align: center;
+}
+
+form {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+label {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid;
+    background-color: #F3F2EF;
+}
+
+.btn1 {
+    min-width: 18vw;
+    min-height: 4vw;
+    flex-shrink: 0;
+    border-radius: 28px;
+    border: 3px solid rgba(93, 85, 55, 0.36);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+    color: #D39C0E;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.9vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Наша команда */
+.team {
+    width: 100%;
+}
+
+h2 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 3.3vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.man-img {
+    width: 17vw;
+    height: 17vw;
+    border-radius: 50%;
+}
+
+.name {
+    font-family: Montserrat;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 2vh;
+}
+
+.job {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.people {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 17%;
+}
+
+/* Контактная информация */
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+}
+
+.iadress a {
+    text-decoration: none;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 3vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.iphone:hover {
+    text-decoration: underline;
+}
+
+.iadress:hover {
+    text-decoration: underline;
+}
+
+a[href^="mailto:"]:hover {
+    text-decoration: underline;
+}
+
+.iphone {
+    display: flex;
+    flex-direction: column;
+}
+
+
+a[href^="tel:"] {
+    text-decoration: none;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.65vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.text {
+    font-family: Montserrat;
+    font-size: 1.3vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a[href^="mailto:"] {
+    text-decoration: none;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.7vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+/* Футер */
+footer {
+    margin: 3%;
+    margin-top: 15%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-text {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact {
+    text-align: center;
+}
+
+.number {
+    text-align: center;
+}
+
+.icon {
+    width:  3.4vw;
+    height: 3.4vw;
+    margin-right: 4vw;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,142 @@
+@font-face {
+    font-family: "MonteCarlo";
+    src: local("MonteCarlo"),
+        url("/static/fonts/MonteCarlo/MonteCarlo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+        url("/static/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+body {
+    margin: 0;
+    background: #C3BEBB;
+    font-size: 100%;
+    font-family: Montserrat;
+}
+
+.body {
+    max-width: 100%;
+}
+
+.navbar-brand {
+    margin-left: 10%;
+}
+
+.nav-centered {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+li .nav-item img{
+    width: 2.55vw;
+    margin-right: 20px;
+}
+
+.conteiner {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+
+.conteiner-img {
+    width: 100%;
+    opacity: 0.6;
+}
+
+.text {
+    position: absolute;
+    text-align: center;
+    right: 9%;
+    bottom: 20%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.name {
+    color: #F5F5F5;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: MonteCarlo;
+    font-size: 28vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: absolute;
+    margin-bottom: 8%;
+}
+
+.hellotext {
+    color: #EA9F40;
+    text-align: center;
+    margin-right: 7%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    position: relative;
+}
+
+.button {
+    min-width: 30vw;
+    min-height: 5vw;
+    background: none;
+    border-radius: 28px;
+    border: 3px solid rgba(234, 230, 215, 0.36);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-top: 8%;
+    margin-right: 9%;
+    color: #F5F5F5;
+    text-align: center;
+    font-size: 2vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+footer {
+    margin: 3%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-text {
+    color: #000;
+    text-align: center;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact {
+    text-align: center;
+}
+
+.number {
+    text-align: center;
+}
+
+.icon {
+    width:  3.4vw;
+    height: 3.4vw;
+    margin-right: 4vw;
+
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}

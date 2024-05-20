@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "MonteCarlo";
+    src: local("MonteCarlo"),
+        url("/static/fonts/MonteCarlo/MonteCarlo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+    url("/static/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+/* Body */
+body {
+    margin: 0;
+    background: #F3F2EF;
+    font-size: 100%;
+    font-family: Montserrat;
+}
+
+.body {
+    margin-top: 20%;
+    max-width: 100%;
+}
+
+.navbar-brand {
+    margin-left: 7%;
+}
+
+.nav-centered {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+li img {
+    width: 2.55vw;
+    margin-right: 20px;
+}
+
+/* Вы выбрали */
+.choice {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 2.34vw;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 20% 0% 0% 10%;
+}
+
+.img img {
+    width: 12.86vw;
+    height: 16vw;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin: 5% 0% 0% 10%;
+    gap: 50px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+}
+
+.name {
+    color: #000;
+    text-align: center;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-family: Montserrat;
+}
+
+/*.price {*/
+/*    color: #000;*/
+/*    font-size: 1.3vw;*/
+/*    font-style: normal;*/
+/*    font-weight: 500;*/
+/*    line-height: normal;*/
+/*}*/
+
+.desc button {
+    width: 2.86vw;
+    height: 2.86vw;
+    border-radius: 12px;
+    background: #D9D9D9;
+    border: none;
+    color: #000;
+    font-size: 1.82vw;
+    font-weight: 500;
+}
+
+/*.desc span {*/
+/*    padding: 15px;*/
+/*}*/
+
+.customBtn {
+    width: 16.93vw;
+    height: 4vw;
+    border-radius: 24px;
+    border: none;
+    background: #ECA852;
+    box-shadow: 3px 5px 15px -3px #8C887A;
+    color: #4F4933;
+    text-align: center;
+    font-size: 1.4vw;
+    font-style: italic;
+    font-weight: 500;
+}
+.button{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10% 12% 0 0;
+}
+/* Футер */
+footer {
+    margin: 3%;
+    margin-top: 15%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+.footer-text {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.2vw;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.contact {
+    text-align: center;
+}
+
+.number {
+    text-align: center;
+}
+
+.icon {
+    width: 3.4vw;
+    height: 3.4vw;
+    margin-right: 4vw;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}

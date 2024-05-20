@@ -1,0 +1,59 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}">
+{% endblock %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <main>
+            <div class="content">
+                <div class="frame">
+                    <div class="photo">
+                        <img src="{% static '/img/waitress-resting-with-cup-of-drink.jpg' %}" alt="...">
+                    </div>
+                    <div class="desc">
+                        <div class="cardBody">
+                            <span class="cardTitle">Немного нашей истории</span>
+                            <span class="cardText">Мы открываем свою первую кофейню на улице Гоголя. Наша мечта -
+                                предлагать гостям качественный кофе по демократичной цене, в непринужденной и
+                                дружелюбной атмосфере. Стать островком спокойствия и уединения среди городского шума.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="desc">
+                        <div class="cardBody">
+                            <span class="cardTitle">Вы, самое ценное в нашей кофейни</span>
+                            <span class="cardText">Наша кофейня предлагает не только вкуснейшие кофе и десерты, но и
+                                место досуга, где каждый посетитель, исходя из своих предпочтений, найдёт свой уголок.
+                                Мы всегда рады всем нашем гостям! Как говориться, от мала до велика.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="{% static '/img/full-shot-friends-eating-at-restaurant.jpg' %}" alt="...">
+                    </div>
+                </div>
+                <div class="frame">
+                    <div class="photo">
+                        <img src="{% static '/img/barista-making-a-cup-of-coffee.jpg' %}" alt="...">
+                    </div>
+                    <div class="desc">
+                        <div class="cardBody">
+                            <span class="cardTitle">О кофе</span>
+                            <span class="cardText">Для нас кофе не просто продукт или товар, это целая экосистема,
+                                которая делает жизнь нас и наших гостей лучше.Качественные отборные кофейные зерна,
+                                пожаренные на современном оборудовании, не просто дают бодрость в течение дня, они еще и
+                                полезны для здоровья, потому что содержат много витаминов и антиоксидантов.Мы жарим
+                                зерно уже более двух лет.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block link %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'css/contacts.css' %}">
+{% endblock %}
+
+{% block title %}
+Контакты
+{% endblock %}
+
+{% block content %}
+<main>
+            <div class="container-fluid">
+                <div class="feedback">
+                    <h1>Связаться с нами</h1>
+                    <form action="">
+                        <label for="text">Привет, меня зовут</label>
+                        <input type="text" id="text" placeholder="Олег">
+                    </form>
+                    <button type="button" class="btn1">Отправить</button>
+                </div>
+                <div class="team">
+                    <h2>Наша команда</h2>
+                    <div class="people">
+                        <div class="Marat">
+                            <img class="man-img" src="{% static 'img/marat.jpg' %}" alt="">
+                            <p class="name">Марат</p>
+                            <p class="job">Главный бариста</p>
+                        </div>
+                        <div class="Polina">
+                            <img class="man-img" src="{%static 'img/polina.jpg' %}" alt="">
+                            <p class="name">Полина</p>
+                            <p class="job">Менеджер</p>
+                        </div>
+                        <div class="Victor">
+                            <img class="man-img" src="{% static 'img/victor.jpg' %}" alt="">
+                            <p class="name">Виктор</p>
+                            <p class="job">Бухгалтер</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <div class="iadress"><a
+                            href="https://yandex.ru/maps/239/sochi/house/ulitsa_gogolya_11/Z0AYfwZjSUYAQFppfXhydnpmYQ==/?ll=39.913038%2C43.437655&z=16">Россия,
+                            Сочи, <br>
+                            ул. Гоголя, 11</a>
+                    </div>
+                    <div class="iphone">
+                        <a href="tel:+89100942133">8 (910) 094 21 33</a>
+                        <a href="tel:+89157700765">8 (915) 770 07 65</a>
+                    </div>
+                    <div class="iwork">
+                        <p class="text">Сотрудничать с нами</p>
+                        <a
+                            href="mailto:gustofriend@gmail.com?subject=Предложение о сотрудничестве&body=Привет, у меня есть интересное предложение!">gustofriend@gmail.com</a>
+                    </div>
+                    <div class="iemail">
+                        <p class="text">Работать у нас</p>
+                        <a href="mailto:gustojob@gmail.com?subject=Хочу у вас работать">gustojob@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+{% endblock %}

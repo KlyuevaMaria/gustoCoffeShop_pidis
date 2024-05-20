@@ -1,0 +1,32 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" type="text/css" href="{%  static 'css/login.css'%}">
+{% endblock %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+
+    <div class="login center">
+                <div class="loginHead">Авторизация</div>
+                <div class="formLogin">
+
+
+            <form method="post" class="was-validated center">
+            {% csrf_token %}
+                <div class="mb-3 center">
+                    {{ form.as_p }}
+                </div>
+            <button type="submit"  class="btn btn-warning custom_btn buttonReg" >Войти</button>
+
+            </form>
+             <p class="reg">Ещё не зарегестрировались? Давайте же <a href="{% url 'register' %}" class="customNav">сделаем это</a></p>
+        </div>
+    </div>
+
+{% endblock %}

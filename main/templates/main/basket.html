@@ -1,0 +1,48 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" type="text/css" href="{%  static 'css/basket.css'%}">
+{% endblock %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <main>
+            <section>
+                <span class="choice">Вы выбрали</span>
+            </section>
+            <section>
+                <div class="item">
+                    <div class="img"><img src="{% static '/img/desert (5).jpg' %}" alt=""></div>
+                    <div class="desc">
+                        <span class="name">Капкейк с шоколадной начинкой</span>
+                        <div class="price">
+                            <span class="price">119 руб.</span>
+                            <button>+</button>
+                            <span>1</span>
+                            <button>-</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="img"><img src="{% static '/img/coffe3.jpg' %}" alt=""></div>
+                    <div class="desc">
+                        <span class="name">Раф</span>
+                        <div class="price">
+                            <span class="price">169 руб.</span>
+                            <button>+</button>
+                            <span>1</span>
+                            <button>-</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="button">
+                    <button type="button" class="customBtn" onclick="location.href='../login/login.html'">Оформить
+                        заказ</button>
+                </div>
+            </section>
+        </main>
+{% endblock %}

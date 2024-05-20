@@ -1,0 +1,16 @@
+{% extends 'main/base.html' %}
+
+{% load static %}
+
+{% block link %}
+<link rel="stylesheet" type="text/css" href="{%  static 'css/reg_done.css'%}">
+{% endblock %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <p>Поздравляем, Вы заргестрированы!🎉 Пожалуйста,<a href="{% url 'login' %}">авторизируйтесь</a></p>
+
+{% endblock %}

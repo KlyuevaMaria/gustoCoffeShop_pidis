@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    {% load static %}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="{%  static 'css/style.css'%}">
+{# ПОДКЛЮЧЕНИЕ CSS#}
+{% block link %}
+{#    <link rel="stylesheet" type="text/css" href="{%  static 'css/style.css'%}">#}
+{% endblock %}
+
+
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<div class="body">
+        <header>
+            <div class="container-nav">
+                <nav class="navbar fixed-top navbar-expand-lg navbar-light"
+                    style="background-color: rgb(195, 190, 187, 0.61);">
+                    <div class="container-fluid">
+                        <a class="navbar-brand"
+                            href="https://yandex.ru/maps/239/sochi/house/ulitsa_gogolya_11/Z0AYfwZjSUYAQFppfXhydnpmYQ==/?ll=39.913111%2C43.437676&z=20.11">
+                            <p>Россия, Сочи, <br> ул. Гоголя, 11</p>
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarContent">
+                            <ul class="navbar-nav mr-auto mb-2 nav-centered">
+                                <li class="nav-item">
+                                    <a href="{% url 'index' %}" class="nav-link">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'menu' %}" class="nav-link">Меню</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'contacts' %}" class="nav-link">Контакты</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'about' %}" class="nav-link">О нас</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'basket' %}" class="nav-link">Корзина</a>
+                                </li>
+{#                                <li class="nav-item"><a href="{% url 'basket' %}"><img src="{% static '/img/basket.png' %}"#}
+{#                                            alt=""></a>#}
+{#                                </li>#}
+                                <li class="nav-item">
+                                    <button class="btn btn-warning me-2" type="button">
+                                        <a href="{% url 'login' %}" class="nav-link">Вход</a>
+
+                                    </button>
+{#                                    <a href="{% url 'login' %}"><button class="btn btn-warning me-2" type="button">Вход <a href="{% url 'register' %}" >Регистрация</a></button> </a>#}
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+    {% block content %}{% endblock %}
+
+    <footer>
+            <div class="container-fluid">
+                <div class="footer">
+                    <div class="contact">
+                        <p class="footer-text">Следи за последними новостями тут</p>
+                        <div class="socialnet">
+                            <a href="https://web.telegram.org/"><img class="icon"
+                                    src="{% static '/img/free-icon-telegram-4628688.png' %}" alt=""></a>
+                            <a href="https://vk.com/"><img class="icon" src="{% static '/img/free-icon-vk-5969029.png'%}"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                    <div class="number">
+                        <p class="footer-text">Телефон для справок: <br> 8 (910) 094 21 33</p>
+                    </div>
+                    <div class="time">
+                        <img class="icon" src="{% static '/img/free-icon-time-3239945.png' %}" alt="">
+                        <p class="footer-text">ПН - ВС <br> 9:00 - 21:00</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+{% block linkJS %}{% endblock %}
+</body>
+</html>

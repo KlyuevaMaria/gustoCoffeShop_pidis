@@ -1,0 +1,98 @@
+
+{% extends 'main/base.html' %}
+{% load static %}
+{% block link %}
+<link rel="stylesheet" type="text/css" href="{%  static 'css/menu.css'%}">
+{% endblock %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+
+{% block content %}
+    <div class="sidenav_menu">
+
+    <aside>
+                    <div class="nav_menu">
+                        <nav class="navbar fixed-top nav_menu" style="background-color: rgba(191, 191, 191, 0.61);">
+                            <div class="container-fluid" style="justify-content: center;">
+                                <ul class="navbar-nav center">
+                                    <li class="nav-item changeCol">
+                                        <a href="#coffe" class="nav-link" style="font-size: 1.3vw;">Кофе</a>
+                                    </li>
+                                    <li class="nav-item changeCol">
+                                        <a href="#tea" class="nav-link" style="font-size: 1.3vw;">Чай</a>
+                                    </li>
+                                    <li class="nav-item changeCol">
+                                        <a href="#deserts" class="nav-link" style="font-size: 1.3vw;">Десерты</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </aside>
+
+        <div class="containerCards">
+            <div class="cards_coffe" id="coffe">
+                        {% for el in coffee %}
+
+                    <div class="card" style="width: 14.79vw;">
+                        <img src="{{ el.photo.url}}" alt="{{ el.title }}" class="card-img-top">
+                        <div class="card-body">
+
+{#      <a href="{{ el.get_absolute_url }}" class="nav-link">{{ el.name }}</a>#}
+
+                            <p>{{ el.name }}</p>
+                            <span class="card-text">{{ el.price }} руб.</span>
+                        </div>
+                        <div class="cardDesc">
+                            <span class="desc">{{ el.desc }}</span>
+                        </div>
+                    </div>
+                        {% endfor %}
+
+            </div>
+
+            <div class="cards_coffe" id="tea">
+                    {% for el in tea %}
+                        <div class="card" style="width: 14.79vw;">
+
+                            <img src="{{ el.photo.url}}" alt="{{ el.title }}" class="card-img-top">
+                            <div class="card-body">
+                                <p>{{ el.name }}</p>
+                                <span class="card-text">{{ el.price }} руб.</span>
+                            </div>
+                            <div class="cardDesc">
+                                <span class="desc">{{ el.desc }}</span>
+                            </div>
+
+                        </div>
+                    {% endfor %}
+            </div>
+
+        <div class="cards_coffe" id="desserts">
+                    {% for el in dessert %}
+                        <div class="card" style="width: 14.79vw;">
+
+                            <img src="{{ el.photo.url}}" alt="{{ el.title }}" class="card-img-top">
+                            <div class="card-body">
+                                <p>{{ el.name }}</p>
+                                <span class="card-text">{{ el.price }} руб.</span>
+                            </div>
+                            <div class="cardDesc">
+                                <span class="desc">{{ el.desc }}</span>
+                            </div>
+
+                        </div>
+                    {% endfor %}
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock %}
+{% block linkJS %}
+  <script src="{% static 'js/script.js' %}"></script>
+
+{% endblock %}

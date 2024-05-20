@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "MonteCarlo";
+    src: local("MonteCarlo"),
+        url("/static/fonts/MonteCarlo/MonteCarlo-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: local("Montserrat"),
+    url("/static/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+body {
+    margin: 0;
+    background: #F3F2EF;
+    font-size: 100%;
+}
+
+.body {
+    max-width: 100%;
+}
+
+.navbar-brand {
+    margin-left: 7%;
+}
+
+.nav-centered {
+    width: 100%;
+    justify-content: flex-end;
+}
+
+li img{
+    width: 2.55vw;
+    margin-right: 20px;
+}
+
+/* Форма авторизации */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login {
+    margin-top: 10%;
+    text-align: center;
+    color: #000;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.formLogin {
+    width: 65%;
+}
+
+.loginHead {
+    font-size: 3vw;
+    font-weight: 700;
+}
+
+input[type=text],
+input[type=email],
+input[type=password]{
+    border: none;
+    border-bottom: 1.5px solid;
+    background-color: #F3F2EF;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    /*width: 45%;*/
+    margin-top: 3vw;
+    padding: 1vw;
+}
+
+.log {
+    color: #8C8A80;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 15vw;
+    height: 5vh;
+    border-radius: 45%;
+    border: none;
+    background: rgba(234, 159, 64, 0.66);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.custom_btn {
+    color: #8C8A80;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 18.5vw;
+    height: 3vw;
+    margin: 10px;
+    border-radius: 28px;
+    border: none;
+    background: rgba(234, 159, 64, 0.66);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.customNav{
+    line-height: normal;
+     color: rgba(234, 159, 64, 0.66);
+    font-size: 1.5vw;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.reg{
+    margin: 5%;
+}
